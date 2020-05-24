@@ -2,3 +2,43 @@
 background: orangered;
 width: 100%;
 }
+
+/* Footer */
+#navfooter {
+    display: flex;
+    margin-top: 10px;
+    
+    max-width: 100%;
+    
+}
+
+
+.nav-flex-column {
+    padding-left: 100px;
+    margin: 20px;
+    line-height: 1.5;
+    font-size: .9125rem;
+    font-weight: 400;
+    width: 100%;
+    
+}
+
+
+
+.nav-logo-luma {
+    display: flex;
+    padding-top: 20px;
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 1.231;
+}
+
+.nav-text-info {
+    max-width: 816px;
+    margin-bottom: .5rem!important;
+    color: rgba(39,44,51,.5)!important;
+}
+
+.footer-a-colors:hover {
+   background: rgb(255, 162, 109);
+}
