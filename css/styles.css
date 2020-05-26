@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    margin: 0;
+    font-family: Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-size: .8125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #272c33;
+    text-align: left;
+}
+
+.clase-test {
+background: orangered;
+margin: 10px;
+}
+
+
+
+a {
+    text-decoration: none;
+    font
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+
+/* Discussion Section*/
+
+#discussion-container {
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid;*/
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.row-container {
+    
+
+    height: 100px;
+    padding: 16px;
+    border: 1px solid;
+    border-radius: .5rem;
+    border-color: #868e96;
+    background: white;
+    width: 79%;
+    
+}
+
+
+.media-pic {
+    /*display: flex;
+    flex-direction: column;*/
+    background: violet;
+    border: 1px solid;
+    border-radius: 50%!important;
+    text-align: center;
+    width: 30px;
+}
+
+.pos-relative {
+    position: relative;
+    left: 40px;
+    bottom: 20px;
+}
+
+
+.pos-abs-info { /* pos relative caja 1*/
+    position: absolute;
+    top: 90px;
+    left: 420px;
+    height: auto;
+    width: auto;
+    /*border: 1px solid;*/
+}
+
+
+.pos-abs-info-box2 {
+
+    position: absolute;
+    top: 210px;
+    left: 420px;
+
+}
+
+.into-relative {
+    border-radius: .5rem;
+    border: 1px solid;
+    margin: 10px;
+    padding: 6px;
+    color: #868e96;
+    border-color: #868e96;
+    
+}
+
+/* Mini text- align right*/
+.pos-abs-right {
+    position: absolute;
+    top: 210px;
+    left: 1120px;
+    text-align: center;
+    /*border: 1px solid;*/
+}
+
+
+.angular-f:hover {
+    background: rgba(228, 64, 14, 0.322);
+    font-size: 20px;
+    
+}
+
+
+
+/* QUIZZES SECTION */
+
+
+.quizzes-row {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px;
+    padding: 10px;
+    justify-content: center;
+   /* border: 1px solid tomato; */
+    height: 260px;
+    margin: 0;
+}
+
+
+.rows-q-exterior {
+    
+    margin: 10px;
+    width: 40%;
+    
+   
+}
+
+.interior-quizzes {
+    
+    /*height: 100px; prueba para reducir el interior de la caja*/
+    margin: 10px;
+    padding: 10px;
+    border-radius: .5rem;
+    border: 1px solid;
+    background-color: #fff;
+    
+}
+
+.ts-introduction-text {
+    position: relative;
+    margin: 5px;
+    bottom: 50px;
+    left: 80px;
+    font-size: 1rem;
+    /*border: solid;*/
+}
+
+
+
+.justify-space-bet {
+    justify-content: space-between;
+}
+
+
+
+
+img {
+    max-width: 100%;
+    background-size: cover;
+}
+
+.subtext {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+#navfooter {
+    display: flex;
+    margin-top: 10px;
+    background: white;
+    max-width: 100%;
+    border-top: 1px solid;
+
+    
+}
+
+
+.nav-flex-column {
+    padding-left: 100px;
+    margin: 20px;
+    line-height: 1.5;
+    font-size: .9125rem;
+    font-weight: 400;
+    width: 100%;
+    
+}
+
+
+
+.nav-logo-luma {
+    display: flex;
+    padding-top: 20px;
+    font-size: 1.625rem;
+    font-weight: 400;
+    line-height: 1.231;
+}
+
+.nav-text-info {
+    max-width: 816px;
+    margin-bottom: .5rem!important;
+    color: rgba(39,44,51,.5)!important;
+    
+}
+
+.footer-a-colors:hover {
+   background: rgb(255, 162, 109);
+}
