@@ -3,22 +3,87 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/8c7143470a.js" crossorigin="anonymous"></script>
+    <title>Dashborad</title>
 </head>
 
 <body>
+    <!-- Banner principal de la web -->
 
-    <div class="container-test">
-            Branches Fixed
-
-        <div class="clase-test">
-            Amor, Fe y Esperanza
+    <nav id="main-nav">
+        <div class="nav-container d-flex col-12 p-fixed">
+            <div class="nav-left col-6 d-flex">
+                <button class="toggle">
+                    <i class="fas fa-sliders-h"></i>
+                </button>
+                <a href="#" class="brand d-flex">
+                    <span class="brand-logo box-nav"">
+                        <img src="assets/white.svg" alt="">
+                    </span>
+                <span class="brand-text">Luma</span>
+                </a>
+                <span class="avatar-content d-flex">
+                <span class="avatar box-nav d-flex">
+                    <span class="avatar-container">
+                        <i class="fas fa-expand-alt"></i>
+                    </span>
+                </span>
+                <small class="d-flex">
+                    <strong>
+                        Earnings
+                    </strong>
+                    <span>
+                        $12.3k
+                    </span>
+                </small>
+                </span>
+                <span class="avatar-content d-flex">
+                <span class="avatar box-nav d-flex">
+                    <span class="avatar-container">
+                        <i class="fas fa-ticket-alt"></i>
+                    </span>
+                </span>
+                <small class="d-flex">
+                    <strong>
+                        Sales
+                    </strong>
+                    <span>
+                        264
+                    </span>
+                </small>
+                </span>
+                <form action="" class="search-bar">
+                    <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                    <input type="text" placeholder="search...">
+                </form>
+            </div>
+            <div class="nav-rigth col-6 d-flex">
+                <div class="dopdown">
+                    <button>
+                    <i class="far fa-envelope"></i>
+                </button>
+                </div>
+                <div class="dopdown">
+                    <button>
+                    <i class="far fa-bell"></i>
+                </button>
+                </div>
+                <div class="dopdown">
+                    <a href="#">
+                        <span>
+                        <i class="fas fa-user"></i>
+                    </span>
+                    </a>
+                </div>
+            </div>
         </div>
-
-    </div>
-
+    </nav>
 
 
 </body>

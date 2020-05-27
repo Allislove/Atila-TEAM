@@ -59,7 +59,10 @@
 }
 
 .brand-logo {
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: var(--three-color);
+    border-radius: 5px;
     margin-right: 0.5rem;
 }
 
@@ -76,35 +79,23 @@
 
 /* Estilos generales del avatar */
 
-.avatar-content {
-    margin-right: 1rem;
-}
-
-.avatar {
-    font-size: 1rem;
-    margin-right: 0.75rem;
-    background-color: var(--secondary-color);
-    justify-content: center;
-    align-items: center;
-}
-
-.avatar-container i {
-    color: var(--text-color-primary);
-}
-
 .avatar-content small {
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.avatar-content small strong {
-    color: var(--text-color-primary);
+.avatar-content {
+    align-items: center;
 }
 
-.avatar-content small>span {
-    color: var(--shadow-color);
+.avatar {
+    font-size: 1rem;
+    margin-right: 0.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
-
-/* Estilos generales del input */
+.avatar-container {
+    background-color: var(--secondary-color);
+}
