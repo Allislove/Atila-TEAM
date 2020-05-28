@@ -31,6 +31,10 @@
     position: relative;
 }
 
+.p-absolute {
+    position: absolute;
+}
+
 .box-nav {
     width: 2.5rem;
     height: 2.5rem;
@@ -45,14 +49,23 @@ button {
     border: none;
     margin-right: 1rem;
     background-color: transparent;
+    cursor: pointer;
 }
 
 a {
     text-decoration: none;
     margin-right: 1rem;
+    cursor: pointer;
 }
 
 i {
     font-size: 20px;
     color: var(--shadow-color);
+}
+
+.form-control {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #edf0f2;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }

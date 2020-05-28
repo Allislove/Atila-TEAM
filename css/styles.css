@@ -28,6 +28,9 @@
 
 /* Estilos generales del nav */
 
+
+/* Estilos del nav left */
+
 #main-nav {
     background-color: var(--primary-color);
     min-height: 65px;
@@ -41,7 +44,6 @@
 
 #main-nav .nav-left {
     /* border: 1px solid black; */
-    /* padding: 5px 5px; */
     align-items: center;
 }
 
@@ -104,7 +106,66 @@
 
 .avatar-content small>span {
     color: var(--shadow-color);
+    margin-top: 5px;
 }
 
 
 /* Estilos generales del input */
+
+.search-bar {
+    background-color: var(--secondary-color);
+    border-color: transparent;
+}
+
+.search-bar .search-btn {
+    padding: 0 0.65rem;
+    margin-right: 0;
+}
+
+.search-bar .search-btn i {
+    font-size: 0.8125rem;
+}
+
+input[type="text"] {
+    border-color: transparent;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: var(--text-color-primary);
+}
+
+
+/* Estilos del nav rigth */
+
+.nav-rigth .dropdown {
+    margin-left: 1rem;
+}
+
+.nav-rigth .dropdown a {
+    margin-right: 0px;
+}
+
+.nav-rigth .badged {
+    border-radius: 100px;
+    color: var(--text-color-primary);
+    background-color: #ed0b4c;
+    padding: 0 0.5rem;
+    top: 4px;
+    left: 15px;
+}
+
+.nav-rigth .dropdown button i {
+    font-size: 25px;
+}
+
+.nav-rigth .dropdown a span {
+    border-radius: 50%;
+    background-color: var(--three-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-rigth .dropdown a span i {
+    padding: 0.25rem;
+    color: var(--text-color-primary);
+}
