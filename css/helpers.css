@@ -64,8 +64,92 @@ i {
 }
 
 .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 1rem + 2px);
     padding: 0.5rem 0.75rem;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #272c33;
+    background-color: #fff;
+    background-clip: padding-box;
     border: 1px solid #edf0f2;
     border-radius: 0.25rem;
+    box-shadow: inset 0 1px 1px rgba(39, 44, 51, 0.075);
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.page-container {
+    padding-right: 10.5rem;
+    padding-left: 10.5rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.btn {
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.card {
+    box-shadow: var(--shadow-cards);
+    margin-bottom: 2rem;
+    flex-direction: row;
+    background-color: var(--background-page);
+    border: 1px solid #dfe2e6;
+    border-radius: 0.5rem;
+}
+
+.card-form-body {
+    padding: 1rem 1rem 0;
+}
+
+.space-input {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: inline-block;
+    color: var(--text-color-main);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.custom-select {
+    display: inline-block;
+    height: calc(1.5em + 1rem + 2px);
+    padding: 0.5rem 1.75rem 0.5rem 0.75rem;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #272c33;
+    vertical-align: middle;
+    background: #fff;
+    border: 1px solid #edf0f2;
+    border-radius: 0.25rem;
+    box-shadow: inset 0 1px 2px rgba(39, 44, 51, 0.075);
 }

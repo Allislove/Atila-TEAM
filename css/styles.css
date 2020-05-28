@@ -12,7 +12,10 @@
     --text-color-primary: #ffffff;
     --text-color-secondary: rgb(46, 50, 77);
     --text-color-altern: rgb(171, 174, 178);
+    --text-color-main: #303956;
     --shadow-ligth: 0 6px 6px -3px rgba(39, 44, 51, 0.1), 0 10px 14px 1px rgba(39, 44, 51, 0.04), 0 4px 18px 3px rgba(39, 44, 51, 0.02);
+    --shadow-cards: 0 3px 3px -2px rgba(39, 44, 51, 0.1), 0 3px 4px 0 rgba(39, 44, 51, 0.04), 0 1px 8px 0 rgba(39, 44, 51, 0.02);
+    --background-page: #f5f7fa;
 }
 
 
@@ -23,6 +26,10 @@
     padding: 0px;
     font-family: Roboto;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-page);
 }
 
 
@@ -126,7 +133,7 @@
     font-size: 0.8125rem;
 }
 
-input[type="text"] {
+.search-bar input[type="text"] {
     border-color: transparent;
     box-shadow: none;
     background-color: transparent;
@@ -168,4 +175,87 @@ input[type="text"] {
 .nav-rigth .dropdown a span i {
     padding: 0.25rem;
     color: var(--text-color-primary);
+}
+
+
+/* Estilos main Page */
+
+
+/* Estilos page header */
+
+.page-header {
+    padding-top: 2rem;
+}
+
+.page-header .page-left {
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-header .page-left .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.81rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: 0.5rem;
+}
+
+.page-left h2 {
+    color: var(--text-color-main);
+    font-size: 32px;
+}
+
+.breadcrumb li i {
+    font-size: 10px;
+}
+
+.breadcrumb li a {
+    color: var(--text-color-altern);
+}
+
+.breadcrumb li:last-child a {
+    font-weight: 300;
+}
+
+.breadcrumb li:last-child {
+    margin-left: -0.5rem;
+}
+
+.page-rigth a {
+    color: #868e96;
+    border: 1px solid#868e96;
+}
+
+.page-rigth a:hover {
+    background-color: #868e96;
+    color: var(--text-color-primary);
+}
+
+
+/* Estilos Page container cards */
+
+.page-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.page-section .card {
+    justify-content: space-between;
+}
+
+.row .space-input .custom-control {
+    margin-top: 0.5rem;
+}
+
+.card button {
+    background-color: white;
+    margin-right: 0px;
+    border: 1px solid #dfe2e6;
+    border-radius: 0px;
+}
+
+.card button i {
+    font-size: inherit;
 }
