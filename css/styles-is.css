@@ -5,6 +5,7 @@
      font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     
@@ -21,7 +22,12 @@ body{
 .blue{
   background:blue;
 }
-
+.overflow{
+  overflow: hidden;
+}
+.justify-bt{
+  justify-content: space-between;
+}
 .d-inline-block{
   display:inline-block;
 }
@@ -79,8 +85,8 @@ body{
 }
 
 .logo-img{
-  height:30px;
-  padding:10px;
+  height:40px;
+  padding:13x;
   margin:15px;
   border-radius:5px;
 }
@@ -177,6 +183,9 @@ body{
 .text-card{
   color:black;
 }
+
+/*Dashboard Instructor*/
+
 .card{
   width:300px;
   padding:20px 20px;
@@ -185,6 +194,98 @@ body{
   border-radius:15px;
   box-shadow:  3px 2px rgba(39,44,51,.1);
 }
+.card: hover{
+  color: yellow;
+}
+/*Courses*/
+
+.card-courses{
+  background-color:white;
+  margin:10px 20px;
+  border: 1px solid #dfe2e6;
+  border-radius: .5rem;
+  box-shadow:  0 2px 7px 0 rgba(39,44,51,.1);
+}
+
+/*Elements style card courses*/
+
+.card-over1{
+  overflow: hidden;
+  background-image: url(https://www.digital55.com/wp-content/uploads/2019/10/Renderizado_en_servidor_con_angular_universal.png);
+  background-size: cover;
+  background-position: center center;
+  height: 168px;
+  border: solid 0.5px rgb(211, 206, 206);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.card-over2{
+  overflow: hidden;
+  background-image: url(https://www.deustoformacion.com/sites/deustoformacion/files/imagenes_blog_1/tic/2015/05/html5.png);
+  background-size: cover;
+  background-position: center center;
+  height: 168px;
+  border: solid 0.5px rgb(211, 206, 206);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.card-over3{
+  overflow: hidden;
+  background-image: url(https://lenguajecss.com/img/logo.png);
+  background-size: cover;
+  background-position: center center;
+  height: 168px;
+  border: solid 0.5px rgb(211, 206, 206);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.card-over4{
+  overflow: hidden;
+  background-image: url(https://s3-us-west-2.amazonaws.com/devcodepro/media/blog/como-funciona-reactjs.png);
+  background-size: cover;
+  background-position: center center;
+  height: 168px;
+  border: solid 0.5px rgb(211, 206, 206);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-over5{
+  overflow: hidden;
+  background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2019/08/sketch-app-review-featured-image.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 168px;
+  border: solid 0.5px rgb(211, 206, 206);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-over6{
+  overflow: hidden;
+  background-image: url(https://i.pinimg.com/originals/c0/19/67/c019672a91fceb986396e64875a0fc68.png);
+  background-size: cover;
+  background-position: center center;
+  height: 168px;
+  border: solid 0.5px rgb(211, 206, 206);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-over7{
+  overflow: hidden;
+  background-image: url(https://www.trecebits.com/wp-content/uploads/2019/10/Photoshop.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 168px;
+  border: solid 0.5px rgb(211, 206, 206);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-over8{
+  overflow: hidden;
+  background-image: url(https://ideakreativa.net/wp-content/uploads/2019/07/ai-plugins.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 168px;
+  border: solid 0.5px rgb(211, 206, 206);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
 .cards-flex{
   display:flex;
   align-items:center;
@@ -225,8 +326,45 @@ body{
   text-decoration:underline;
 }
 
+/*Columns flexbox*/
 
+.container {
+  width: 90%;
+  margin: 0 5%;
+}
+.col-1{
+  width: math(12/100%);
+}
+.col-2{
+  width: 60%%;
+}
+.col-3{
+  width: 40%;
+}
+.col-4{
+  width: 33.333%;
+}
+@media (min-width: 992px) {
+    
+  .col-lg3{
+      width: 25%;
+  }
+  .row {
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
 
+@media (min-width: 768px) { 
+  .col-md4{
+      width: 33.333%;
+  }
+  
+  .row {
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
 @media (min-width: 750px) and (max-width: 850px) {
   .ocultar-media{
     display:none;
@@ -235,26 +373,30 @@ body{
   align-items:center;
   justify-content:center;
   flex-wrap:wrap;
+  }
+  .col-md6{
+    width: 50%;
 }
 }
 
 @media (min-width: 576px) and (max-width: 750px) {
-  .ocultar-media2{
-    display:none;
+    .ocultar-media2{
+      display:none;
+    }
+    .margin-h20px-media{
+      margin-left:20px;
+      margin-right:20px;
   }
-  .margin-h20px-media{
-    margin-left:20px;
-    margin-right:20px;
-}
-  .margin-v20px-media{
-    margin-top:20px;
-    margin-bottom:20px;
-}  
-  .cards-flex{
-  align-items:center;
-  justify-content:center;
-  flex-wrap:wrap;
-}
+    .margin-v20px-media{
+      margin-top:20px;
+      margin-bottom:20px;
+  }  
+    .cards-flex{
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+  
 }
 
 @media (min-width: 0px) and (max-width: 575px) {
@@ -267,13 +409,15 @@ body{
   .margin-h20px-media{
     margin-left:20px;
     margin-right:20px;
-}
+  }
   .margin-v20px-media{
     margin-top:20px;
     margin-bottom:20px;
-}  
+  }  
   .cards-flex{
   align-items:center;
   justify-content:center;
   flex-wrap:wrap;
+  }
+
 }
