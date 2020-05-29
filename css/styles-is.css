@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     
     font-size: .8125rem;
@@ -15,6 +16,10 @@ body{
     color: #272c33;
     text-align: left;
     background-color: #f5f7fa;
+}
+hr {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.123);
 }
 .red{  
   background:red;
@@ -40,6 +45,9 @@ body{
   display:flex;
   align-items:center;
   justify-content:space-between;  
+}
+.align-center{
+  align-items: center;
 }
 .d-none{
   display:none;
@@ -172,6 +180,49 @@ body{
   color: #868e96;
   background-color: transparent;
 }
+.button1:hover {
+  background-color: rgb(152, 199, 43);  
+  color: white;
+}
+.button2{
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 11px;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+  border: none;
+  cursor: pointer;
+  border-radius: .25rem;
+  color: #000000;
+}
+.button2:hover {
+  background-color: #303956;
+  color: white;
+}
+.previous {
+  background-color:  #303956;
+  color: white;
+}
+.next {
+  background-color: rgb(152, 199, 43); 
+  color: white;
+}
+.prev-next{
+  margin: 2% 0.3%;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+a[class^="prev-next"]:hover{
+  background-color: white;
+  color: #000000;
+
+}
+
+.round {
+  border-radius: 50%;
+}
 .all-topics-menu{
   color:black;
   font-weight:500;  
@@ -194,9 +245,8 @@ body{
   border-radius:15px;
   box-shadow:  3px 2px rgba(39,44,51,.1);
 }
-.card: hover{
-  color: yellow;
-}
+
+
 /*Courses*/
 
 .card-courses{
@@ -306,10 +356,7 @@ body{
 .subrayado{
   color:grey;
 }
-.button1:hover {
-  background-color: grey;
-  color: white;
-}
+
 .all-topics:hover .all-topics-hover{
   display:inline-block;
   background-color:white;
@@ -332,11 +379,12 @@ body{
   width: 90%;
   margin: 0 5%;
 }
+
 .col-1{
   width: math(12/100%);
 }
 .col-2{
-  width: 60%%;
+  width: 50%;
 }
 .col-3{
   width: 40%;
