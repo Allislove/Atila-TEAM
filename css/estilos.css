@@ -1,0 +1,133 @@
+
+.contenedor1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;   
+    
+}
+
+.card{
+    width: 30%;
+    margin: 5px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: aqua;
+  
+}
+.card1{
+    background-image: url("https://www.elegantthemes.com/blog/wp-content/uploads/2019/08/sketch-app-review-featured-image.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 180px;
+    left:850px;
+    border-radius: 10px;
+    bottom: -2px;
+   
+}
+.card2{
+    background-image: url("https://www.adslzone.net/app/uploads-adslzone.net/2017/02/photoshop-1.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 180px;
+    left: 420px;
+    border-radius: 10px;
+    bottom: -2px;
+
+}
+.card3{
+    background-image: url("https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/a1/4b/75/a14b75af-b4af-678c-e334-4135113ab8b9/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png");
+    background-size: cover;
+    width: 350px;
+    height: 180px;
+    left:850px;
+    border-radius: 10px;
+    bottom: -2px;
+}
+.imagen1{
+    border-radius: 20px;
+    height: 20px;
+}
+.imagen2{
+    border-radius: 20px;
+    height: 20px;
+}
+.imagen3{
+    border-radius: 20px;
+    height: 20px;
+}
+.parrafo3{
+    margin-bottom: 150px;
+
+}
+.parrafo2{
+    margin-bottom: 120px;
+}
+
+/* parte baja */
+.parte3{
+    height: 100px;
+    background-color:white;
+}
+.texto{
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+.texto2{
+    justify-content: center;
+    text-align: center;
+    
+}
+.card4{
+    background-color: blueviolet;
+    padding: 0.5rem ;
+    margin: 0.5rem;
+    border-radius: 20px;
+}
+
+.section1{
+    text-align: center;
+}
+.segundaparte{
+    background-image: url("http://luma.humatheme.com/assets/images/photodune-4161018-group-of-students-m.jpg");
+    width: 100%;
+    height: 900px;
+    background-size: cover; 
+}
+.parrafo90{
+    color:white;
+    text-align: center;
+}
+.parrafo91{
+    color:white;
+    text-align: center;
+}
+.container{
+    width: 90%;
+    margin: 0% 5%;
+}
+.row{
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+
+.col-1{
+    width: 100%;
+}
+.col-4{
+    width: 33.333%; 
+}
+.col-3{
+    width: 40%;
+}
+.d-flex-cc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer{
+ background-color: teal;
+ width: 100%;
+ height: 200px;   
+}
