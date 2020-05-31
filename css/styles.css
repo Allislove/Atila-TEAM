@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+/* Navigation */
+.top-bar{
+    height:64px;
+    /* background-color: #272c33; */
+    background-color: #303956;
+    z-index: 200;
+
+}
+
+.nav-container{
+    padding: 0 16px;
+    height: 64px;
+}
+
+.burger{
+    cursor: pointer;
+    color: #c4c4c4;
+
+}
+
+.logo-holder{
+    height: 40px;
+    width: 40px;
+    background-color: #5567ff;
+    vertical-align: center;
+}
+.logo{
+    padding:.25rem;
+}
+
+.nav{
+    left:0;
+}
+
+header ul li{
+    display: inline-block;
+    margin-right:4px;
+    margin-top:-16px;
+}
+
+header ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #c4c4c4;
+    padding: 0px 4px;
+}
+
+
+.col-3{
+    width: 25%;
+}
+.col-9{
+    width: 75%;
+}
+.col-6{
+    width: 50%;
+}
+
+/* Mobile Devices */
+
+    /* Small Devices, landscape */
+
+        /* Navigation */
+        
+        @media only screen and (max-width: 575.98px){
+        
+            header ul li{
+                display:none;
+            }
+
+            .ml-auto{
+                margin-left:auto;
+            }
+            #atila{
+                display: none;
+            }
+        }
+        
+        @media only screen and (min-width: 576px) and (max-width: 767.98px){
+
+            .col-sm-2{
+                width: 16.66%;
+            }
+            .col-sm-10{
+                width: 83.33%;
+            }
+            #atila{
+                display: none;
+            }
+        }
+        
+        @media only screen and (min-width: 768px) and (max-width: 991.98px){
+
+            .col-md-1{
+                width: 8.33%;
+            }
+
+            .col-md-11{
+                width: 91.66%
+            }
+
+            header ul {
+                margin-left:40px;
+            }
+
+            .logo-holder{
+                margin-left: 9px;
+            }
+
+            #atila{
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width: 992px) and (max-width: 1199.98px){
+
+            .col-lg-1{
+                width: calc(8.33%*1);
+            }
+
+            .col-lg-11{
+                width: calc(8.33%*11)
+            }
+    
+            .nav{
+                left:75px;
+            }
+
+            #atila{
+                font-size:25px;
+                font-weight:700;
+                left:5px;
+            }
+
+
+        }
+
+
+/* Lettering */ 
+
+.exo2{
+    font-family: 'Exo 2', sans-serif;
+}
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.white{
+    color:#fff;
+}
+
+/* Helpers */
+.row{
+    display: flex;
+    align-items: center;
+}
+
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+}
+
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+.fixed{
+    position: fixed;
+}
+
+    /* Buttons */
+    .rounded{
+        border-radius: 4px;
+    }
+    .btn{
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 8px 16px;
+        line-height: 19.5px;
+    }
+    .btn-outline-white{
+        color:#fff;
+        border: solid 1px #fff;
+    }
+
+.w-100{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
+}
+.right{
+    float:right;
+    justify-content: flex-end;
+}
+    /* Paddings */
+    .pr-16{
+        padding-right:16px;
+    }
+    .pl-16{
+        padding-left:16px;
+    }
+    .pt--16{
+        padding-top:-16px;
+    }
+
+    /* Margins */
+    .ml-16{
+        margin-left:16px;
+    }
