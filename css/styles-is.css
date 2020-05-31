@@ -33,6 +33,7 @@ hr {
 .justify-bt{
   justify-content: space-between;
 }
+
 .d-inline-block{
   display:inline-block;
 }
@@ -198,6 +199,12 @@ hr {
 }
 .button2:hover {
   background-color: #303956;
+  color: white;
+}
+.button-quiz{
+  background-color: rgb(39, 36, 36);
+  border-radius: 100px;
+  padding: 0.2em 0.5rem;
   color: white;
 }
 .previous {
@@ -372,7 +379,6 @@ a[class^="prev-next"]:hover{
   color:black;
   text-decoration:underline;
 }
-
 /*Columns flexbox*/
 
 .container {
@@ -381,7 +387,7 @@ a[class^="prev-next"]:hover{
 }
 
 .col-1{
-  width: math(12/100%);
+  width: calc(100%/12);
 }
 .col-2{
   width: 50%;
@@ -407,13 +413,15 @@ a[class^="prev-next"]:hover{
   .col-md4{
       width: 33.333%;
   }
-  
+  .col-md2{
+    width: 50%;
+  }
   .row {
       display: flex;
       flex-wrap: wrap;
   }
 }
-@media (min-width: 750px) and (max-width: 850px) {
+@media (min-width: 750px) and  (max-width: 850px) {
   .ocultar-media{
     display:none;
   }
