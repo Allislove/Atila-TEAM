@@ -1,5 +1,12 @@
 /* Media querys */
 
+@media (max-width: 2560px) {
+    .page-container {
+        padding-right: 25.5rem;
+        padding-left: 25.5rem;
+    }
+}
+
 @media (max-width: 1024px) {
     .page-container {
         padding-right: 2.5rem;
