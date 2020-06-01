@@ -4,11 +4,16 @@
     padding:0px;
 }
 
+
+ :root{
+     --primary-green:  #83df36 ; 
+     --secondary-blue: #303956;
+ }
 /* Navigation */
 .top-bar{
     height:64px;
     /* background-color: #272c33; */
-    background-color: #303956;
+    background-color: var(--secondary-blue);
     z-index: 200;
 
 }
@@ -27,7 +32,7 @@
 .logo-holder{
     height: 40px;
     width: 40px;
-    background-color: #5567ff;
+    background-color: var(--primary-green);
     vertical-align: center;
 }
 .logo{
@@ -52,6 +57,19 @@ header ul li a{
 }
 
 
+/* Header */
+.header-container{
+    padding-top:45px;
+    background-color:  var(--primary-green);
+}
+.head-content{
+    padding: 64px 30px;
+}
+.head-text{
+    color:rgba(255, 255, 255, 0.55) !important
+}
+
+
 .col-3{
     width: 25%;
 }
@@ -66,10 +84,10 @@ header ul li a{
 
     /* Small Devices, landscape */
 
-        /* Navigation */
+        
         
         @media only screen and (max-width: 575.98px){
-        
+        /* Navigation */
             header ul li{
                 display:none;
             }
@@ -80,10 +98,11 @@ header ul li a{
             #atila{
                 display: none;
             }
+            
         }
         
         @media only screen and (min-width: 576px) and (max-width: 767.98px){
-
+        /* Navigation */
             .col-sm-2{
                 width: 16.66%;
             }
@@ -93,10 +112,29 @@ header ul li a{
             #atila{
                 display: none;
             }
+
+            p{
+                text-align: justify !important;
+            }
+            .head-content{
+                max-width: 540px;
+                padding: 64px 4% !important;
+                margin:0 10% 
+            }
+            .header-container{
+                text-align: center !important;
+            }
+            .inline{
+                display: inline-block !important;
+            }
+            .left{
+                text-align: left;
+                float: left;
+            }
         }
         
         @media only screen and (min-width: 768px) and (max-width: 991.98px){
-
+        /* Navigation */
             .col-md-1{
                 width: 8.33%;
             }
@@ -116,10 +154,13 @@ header ul li a{
             #atila{
                 display: none;
             }
+
+            
         }
 
-        @media only screen and (min-width: 992px) and (max-width: 1199.98px){
 
+        @media only screen and (min-width: 992px){
+        /* Navigation */
             .col-lg-1{
                 width: calc(8.33%*1);
             }
@@ -142,6 +183,14 @@ header ul li a{
         }
 
 
+
+        @media only screen and (min-width: 1200px){
+        /* Navigation */
+
+
+        }
+
+
 /* Lettering */ 
 
 .exo2{
@@ -153,13 +202,25 @@ header ul li a{
 .white{
     color:#fff;
 }
+p{
+    font-size: .9140625rem;
+    line-height: 1.5;
+}
+h1{
+    font-size: 2.827rem;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    margin-top:1.15rem;
+}
 
 /* Helpers */
 .row{
     display: flex;
     align-items: center;
 }
-
 .align-center{
     align-items: center;
 }
@@ -195,6 +256,17 @@ header ul li a{
         font-weight: 600;
         padding: 8px 16px;
         line-height: 19.5px;
+        transition: background-color 0.4s;
+    }
+    
+    .btn-fill{
+        background-color: #fff !important;
+        color: var(--secondary-blue) !important;
+    }
+
+    .btn:hover{
+        background-color: #fff;
+        color: var(--primary-green)
     }
     .btn-outline-white{
         color:#fff;
@@ -211,6 +283,7 @@ header ul li a{
     float:right;
     justify-content: flex-end;
 }
+
     /* Paddings */
     .pr-16{
         padding-right:16px;
@@ -225,4 +298,10 @@ header ul li a{
     /* Margins */
     .ml-16{
         margin-left:16px;
+    }
+    .mt-16{
+        margin-top:16px;
+    }
+    .mr-16{
+        margin-right: 16px;;
     }
