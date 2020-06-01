@@ -16,6 +16,8 @@
     --shadow-ligth: 0 6px 6px -3px rgba(39, 44, 51, 0.1), 0 10px 14px 1px rgba(39, 44, 51, 0.04), 0 4px 18px 3px rgba(39, 44, 51, 0.02);
     --shadow-cards: 0 3px 3px -2px rgba(39, 44, 51, 0.1), 0 3px 4px 0 rgba(39, 44, 51, 0.04), 0 1px 8px 0 rgba(39, 44, 51, 0.02);
     --background-page: #f5f7fa;
+    --pink-arrow: #ed0b4c;
+    --green-arrow: #77c13a;
 }
 
 
@@ -30,6 +32,7 @@
 
 body {
     background-color: var(--background-page);
+    color: var(--text-color-main);
 }
 
 
@@ -155,7 +158,7 @@ body {
 .nav-rigth .badged {
     border-radius: 100px;
     color: var(--text-color-primary);
-    background-color: #ed0b4c;
+    background-color: var(--pink-arrow);
     padding: 0 0.5rem;
     top: 4px;
     left: 15px;
@@ -182,6 +185,10 @@ body {
 
 
 /* Estilos page header */
+
+.page-content {
+    padding-top: 5rem;
+}
 
 .page-header {
     padding-top: 2rem;
@@ -258,4 +265,105 @@ body {
 
 .card button i {
     font-size: inherit;
+}
+
+.card-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-group .card-container {
+    padding-left: 12px;
+    padding-right: 12px;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+
+.card-group .card-body {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card-group .card-body div:first-child {
+    align-items: center;
+}
+
+.card-body .card-body-item small span {
+    color: var(--text-color-altern);
+}
+
+.card-body .card-body-item small span:first-child {
+    color: var(--text-color-main);
+    font-weight: 600;
+}
+
+.card-body .card-body-item {
+    border-bottom: 0.5px solid #ccc;
+}
+
+.card-body .card-body-item:last-child {
+    border: none;
+}
+
+.chart-legend .chart-legend-item i {
+    color: var(--three-color);
+    font-size: 0.6rem;
+    margin-right: 0.25rem;
+}
+
+.color-second-line {
+    color: rgba(90, 82, 255, 0.1) !important;
+}
+
+.text-chart-circle {
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.text-chart-circle h3 {
+    font-size: 1.41rem;
+}
+
+.text-chart-circle small {
+    text-transform: uppercase;
+    color: var(--text-color-altern);
+}
+
+.card-header {
+    border-bottom: 0.5px solid #ccc;
+}
+
+.card-header .row {
+    justify-content: space-between;
+}
+
+.p-card-header {
+    padding: 1rem 1rem;
+    border-right: 0.5px solid #ccc;
+    font-weight: 600;
+}
+
+.p-card-header .card-subtitle {
+    font-size: 0.8125rem;
+}
+
+.p-card-header:last-child {
+    border-right: 0px;
+}
+
+.row .btn-export {
+    padding: 0.5rem 1rem;
+    border: 1px solid#868e96;
+    border-radius: 5px;
+    margin-right: 0px;
+    color: #868e96;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+}
+
+.row .btn-export:hover {
+    background-color: #868e96;
+    color: var(--text-color-primary) !important;
 }
