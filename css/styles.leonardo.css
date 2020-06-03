@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    box-sizing: border-box;    
+    font-family: "Rubik", Exo\ 2,Helvetica Neue,Arial,sans-serif;
+}
+.style-title {
+    color: #303956;
+    font-size: 31px;
+    line-height: 48px;
+}
+.style-access {
+    font-size: 13px;
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    color: #8E9196;
+}
+.button-learning {
+    border: solid 1px #868E96;
+    font-size: 13px;
+    padding: 10px 16px;
+    color: #868E96;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #F5F7FA;
+}
+.button-learning:hover {
+    background: #868E96;
+    color: white;
+}
+.image-main { 
+    max-height: 100%;
+    padding: 8%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("http://luma.humatheme.com/assets/images/paths/typescript_892x286.png");
+    border-radius: 8px;
+  }
+  .intro-title {
+      color: white;
+      font-size: 31px;
+      margin-bottom: 20px;
+  }
+.style-subtext {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    padding-bottom: 20px;
+}
+.button-intro {
+    border: solid 1px white;
+    background: #3F67D2;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+}
+.button-intro:hover {
+    background: white;
+    color: #3F67D2;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+}
+h3 span {
+    overflow: hidden;
+    background-color: gray;
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 85%;
+}
+.cards {
+    border-radius: 4px;
+    margin:  0% 12px;
+    border: solid 1px #A1A4A6;
+    background: white;
+    padding: 10px 12px;
+}
+small {
+    color: #A1A4A6
+}
+hr {
+    color: #D4D5D6;
+}
+img.logo {
+    border-radius: 4px;
+    margin-right: 2%;
+}
+li {
+    list-style: none;
+    display: flex;
+}
+img.width-100 {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.card-courses {
+    width: 90%;
+    border-radius: 8px;
+    border: solid 1px gray;
+    box-shadow: -2px 21px 30px -10px rgba(0,0,0,0.75) ;
+}
+.text-card-courses {
+    padding: 10px;
+    font-weight: 600;
+    width: 100%;
+    line-height: 25px;
+}
+.d-flex-cb{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;  
+  }
+  .cards-col-2 {
+      width: 100%;   
+  }
+  .card-col-2-image {
+      background-image: url("http://luma.humatheme.com/assets/images/achievements/angular.png");
+  }
+  .card-col-2-image-2 {
+      background-image: url("http://luma.humatheme.com/assets/images/achievements/flinto.png");
+  }
+  .logo-copa {
+      width: 64px;
+      height: 67px;
+  }
+  .logo-col-2 {
+      width: 64px;
+      height: 64px;
+  }
+  div .card-col-2-image {
+      border-radius: 8px;
+  }
+  div .card-col-2-image-2 {
+      border-radius: 8px;
+  }
+  .text-white {
+      color: white;
+      font-weight: 600;
+  }
+  .heart {
+      width: 50px;
+      position: absolute;
+  }
