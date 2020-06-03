@@ -1,0 +1,116 @@
+
+#row-1-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7fa;
+    margin: 20px;
+    /*border: solid 1px;*/
+    
+}
+
+.cont-row1 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border: solid 1px;
+    border-radius:  10px;
+    margin: 10px;
+    padding: 5px;
+    background: white;
+}
+
+
+
+/* Grafica uno radar*/
+
+.text-grafica-one {
+    padding: 10px;
+    border-bottom: 1px solid;
+    
+}
+
+.post-left-text {
+    position: relative;
+    left: 10px;
+}
+
+
+.pt-a {
+    position: absolute;
+    left: 420px;
+    top: 10px;
+    text-decoration-color: black;
+}
+
+
+.pt-a-grafica2 {
+    position: absolute;
+    left: 500px;
+    
+}
+
+
+.cols {
+    
+    margin: 10px;
+}
+
+.items {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    margin: 30px;
+    
+    
+}
+
+
+
+
+.pos-abs-textin {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    
+}
+
+
+
+
+
+.texto-abajo {
+    display: flex;
+    position: absolute;
+    margin: 16px;
+    top: 60%;
+    left: 40%;
+    transform: translate(-60%, -60%);
+    
+}
+
+.d-flex-text {
+    text-align: center;
+    
+}
+
+
+.card-title {
+   
+    display: block;
+    color: white;
+}
+
+.text-white-60 {
+    color: white;
+    font-size: 12px;
+    
+}
+
+
+.grafi-title {
+    font-size: 24px;
+    
+}
