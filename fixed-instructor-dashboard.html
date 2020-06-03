@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles-is.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"">  </script>
     <title>Tablero Instructor</title>
 </head>
 <body>
@@ -94,6 +94,51 @@
 </div>
 <br><br><br>
 <!--  ++++++documentation++++++  -->
+<div class="d-flex-cb margin-h100px margin-h20px-media">
+    <h1 class="all-topics-menu margin-h10px">
+        Ingresos
+    </h1>
+    <div class="width-100p"><hr size=1 noshade="noshade"></div>
+</div>
+<br><br>
+<div class="container"> 
+    <canvas id="myChartX" width="300" height="128"></canvas> 
+</div>
+
+<script>
+        var ctx = document.getElementById('myChartX').getContext('2d');
+        var myChartX = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Vier', 'Sab', 'Dom', 'Lun', 'Mar', 'Mier', 'Jue'],
+                datasets: [{
+                    label: ' Ingresos',
+                    data: [192, 180, 152, 175, 145, 100, 176],
+                    backgroundColor: [
+                        
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+</script>
+
 <br><br>
 <!-- ++++++menu final++++++ -->
 <div class="cut-flex2">
