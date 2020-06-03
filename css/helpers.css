@@ -1,0 +1,36 @@
+#main {
+    height: 100%;
+    background: #F5F7FA;
+    padding: 10%;
+}
+.intro {
+    width: 100%;
+    background: #F5F7FA;
+}
+.padding-top-small {
+    padding-top: 3%;
+}
+.space-top {
+    margin-top: 10%;
+}
+.intro-courses {    
+    width: 100%;
+}
+.padding-logos {
+    padding-right: 10px;
+}
+.margin-small {
+    margin: 5%;
+}
+.width-100{
+    width:100%;     
+}
+.padding-small {
+    padding: 10%;
+}
+.footer-section {
+    width: 100%;
+    margin-top: 5%;
+    border-top: solid 2px gray;
+    padding: 10px;
+}
