@@ -103,6 +103,10 @@ i {
     font-size: 1.6rem;
 }
 
+.card-body {
+    height: 100%;
+}
+
 .form-control {
     display: block;
     width: 100%;
