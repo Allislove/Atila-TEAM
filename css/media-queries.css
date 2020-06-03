@@ -7,6 +7,13 @@
     }
 }
 
+@media (max-width: 2560px) {
+    .page-container {
+        padding-right: 10.5rem;
+        padding-left: 10.5rem;
+    }
+}
+
 @media (max-width: 1024px) {
     .page-container {
         padding-right: 2.5rem;
