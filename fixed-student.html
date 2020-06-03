@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylegraphics.css">
+    <link rel="stylesheet" href="css/5cards.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"> </script>
+    <script src="js/numpares.js"></script>
+
+    <title>Student Dashboard</title>
+</head>
+
+<body>
+  
+
+
+
+    <!-- Home -->
+    <div class="row-cont-one">
+        <div class="pos-spaceb">
+            <div class="cont-two">
+                <h2>Dashboard</h2>
+                    <span> <a href="home.html">Home</a> </span>
+                    <span> <a href="home.html">Dashboard </a> </span>
+            </div>
+        </div>
+
+
+            <div class="pos-spaceb mycourses-a">
+                <div class="my-courses">
+                    <div class="my-button">
+                        <a href="mycourses.html" class="btn"> my courses </a>
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+
+
+<div class="separator-section">
+    <h3> OVERVIEW</h3>
+    <div>
+        <hr size="4" noshade="noshade">
+    </div>
+</div>
+
+
+
+
+    <!-- test div-->
+
+<div>
+
+</div>
+
+
+
+<!-- TEST GRAFICAS-->
+
+
+<div id="row-1-container">
+    <div class="cont-row1">
+        <div class="text-grafica-one">
+
+            <span class="post-left-text">
+                <div class="grafi-title" style="color:black;"> 116</div>
+            <span class="grafi-text"> Angular  <br>
+                <span class="grafi-text-two" style="color:rgb(0, 0, 0);"> best score</span>
+
+            </span> 
+            
+            </span>
+            
+
+            <span class="pt-a"> <a href="poptopics.htm" style="color:rgb(130, 120, 136);"> Popular Topics</a></span>
+        </div>
+
+        <div class="items item-0">
+
+            <canvas id="myChart"   width="380" height="400"    > </canvas>
+
+        </div>
+
+    </div>
+<!-- Fin columna-->
+
+
+
+
+<div class="cont-row1 cols">
+    
+    <div class="colum2">
+
+        <div class="text-grafica-one">
+            <span class="grafi-title">432</span>
+            <span class="grafi-text">Experience</span> <br/>
+            <span class="grafi-text-two">4 days streak this week</span>
+
+            <span class="pt-a-grafica2"> <small> $ </small></span>
+        </div>
+
+        <div class="linear-grafica">
+
+            <canvas id="myChartX"   width="380" height="128" > </canvas>
+
+        </div>
+
+ </div>
+        
+
+
+
+
+
+        <div class="items item-1">
+           <img src="assets/imagenes/flinto.png" alt="flinto" max-height="100%" width="initial">
+            <div class="carousel-item">
+                <span class="pos-abs-textin"> 
+                    ACHIEVEMENT <br/>
+                    Jun 5, 2018
+                    <span> <img src="assets/imagenes/flinto_40x40@2x.png" alt=""></span>
+                </span>
+            </div>
+
+            <div class="texto-abajo">
+                <span> <img src="assets/imagenes/white.png" alt="achievement" width="64"> </span>
+
+                <span class="d-flex-text">
+                    <span>
+                        <span class="card-title ">Flinto</span> <br/>
+                        <span class="text-white-60">Introduction to The App Design Application</span>
+                    </span>
+                </span>
+
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+
+</div>
+    
+
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['JavaScript', 'HTML', 'Flinto', 'Vue.js', 'Sketch', 'Priciple', 'CSS', 'Angular'],
+            datasets: [{
+                label: ' Languajes',
+                data: [19, 18, 15, 17, 14, 10, 16, 16,],
+                backgroundColor: [
+                    
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+
+<script>
+    var ctx = document.getElementById('myChartX').getContext('2d');
+    var myChartX = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Fri', 'Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu'],
+            datasets: [{
+                label: ' Linea',
+                data: [19, 18, 15, 17, 14, 10, 16],
+                backgroundColor: [
+                    
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+
+
+
+
+
+<!-- Fin test graficas -->
+
+
+<!-- LEARNING PATHS and COURSES section-->
+
+<div id="row-container">
+    <!-- Esta columna de tres, sus contenedores hijos se comportaran flex, para que me den row-->
+    <div class="colum-3">
+        <div class="d-col-3 cols3-d-flex">
+            <div class="col-content2"> <!-- Para separar los dos primeros contenido, los meti en una sola caja-->
+                <div class="hijos-img">
+                    <img src="assets/imagenes/angular_40x40@2x.png" width="40" height="40" alt="Angular" class="rounded">
+                </div>
+                <div class="text-into-cols3">
+                    Angular <br>
+                    <small>18 courses</small>
+                </div>
+
+            </div>
+    
+            <div class="text-col3">
+                <a href="#" style="color:black"> resume</a>
+            </div>
+        </div>
+
+        <div class="d-col-3 cols3-d-flex">
+            <div class="col-content2"> <!-- Para separar los dos primeros contenido, los meti en una sola caja-->
+                <div class="hijos-img">
+                    <img src="assets/imagenes/swift_40x40@2x.png" width="40" height="40" alt="Angular" class="rounded">
+                </div>
+                <div class="text-into-cols3">
+                    Swift <br>
+                    <small>18 courses</small>
+                </div>
+
+            </div>
+    
+            <div class="text-col3">
+                <a href="#" style="color:black"> resume</a>
+            </div>
+        </div>
+
+        <div class="d-col-3 cols3-d-flex">
+            <div class="col-content2"> <!-- Para separar los dos primeros contenido, los meti en una sola caja-->
+                <div class="hijos-img">
+                    <img src="assets/imagenes/react_40x40@2x.png" width="40" height="40" alt="Angular" class="rounded">
+                </div>
+                <div class="text-into-cols3">
+                    React Native <br>
+                    <small>18 courses</small>
+                </div>
+
+            </div>
+
+            <div class="text-col3">
+                <a href="#" style="color:black"> resume</a>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="d-row-2">
+
+        <div class="d-col-3 d-row-witdh">
+            <div class="overlay-picture">
+                <img src="assets/imagenes/angular_430x168.png"  width="430" height="168" alt="Angular" class="rounded">
+            </div>
+
+            <div class="d-flex-down-text">
+                <div>Learn Angular</div>
+                <div class="iloveit"> ♠ </div>
+            </div>
+           
+        </div>
+
+        <div class="d-col-3 d-row-witdh">
+            <div class="overlay-picture">
+                <img src="assets/imagenes/angular_430x168.png"  width="430" height="168" alt="Angular" class="rounded">
+            </div>
+           
+            <div class="d-flex-down-text">
+                <div>Build an iOS Application in Swift</div>
+                <div class="iloveit"> ♠ </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Discussions Section-->
+
+<div class="contenedor-todo">
+    <div id="discussion-container">
+
+        <div class="row-container">
+            <div class="media-pic">
+                LB
+            </div>
+
+
+            <span class="pos-relative">
+                <a href="lazaBogdan.html" style="color:black";> Laza Bogdan</a>  <br/>
+                <small>2 days ago</small>
+            </span>
+
+
+            <div class="pos-abs-info">
+                <p> </p><a href="errorinstall.html" style="color:black">Using Angular HttpClientModule instead of HttpModule</a> </p>
+                <span class="into-absolute">
+                    <a href="fixed-discussion.html" style="color:black" class="angular-f">Angular fundamentals</a>
+                </span>
+
+            </div>
+
+        </div>
+        <!-- BOX 2-->
+        <div class="row-container">
+            <div class="media-pic">
+                AD
+            </div>
+
+
+            <span class="pos-relative">
+                <a href="adamcurtis.html" style="color:black";> Adam Curtis</a>  <br/>
+                <small>2 days ago</small>
+            </span>
+
+            <div class="pos-abs-info-box2">
+
+                <p> </p><a href="errorinstall.html" style="color:black"> Why am I getting an error when trying to install angular/http@2.4.2</a> </p>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Quizzes section -->
+<div id="container-row1">
+    <div class="cards-container">
+        <div class="row1-dflex">
+            <div class="spacing-rows">
+                <div class="row-pic row-content">
+                    <img src="assets/imagenes/typescript_200x168.png" alt="Introduction to TypeScript" width="64px" height="48px">
+                </div>
+        
+                <div class="introduction-row row-content">
+                    <a class="card-title" href="fixed-student-take-quiz.html" style="color:rgb(130, 120, 136);">Introduction to TypeScript</a>
+                    <div> 3 days ago</div>
+        
+                </div>
+
+            </div>
+            
+            <div class="row-right-info row-content">
+                <b>2.8</b> <br>
+                score
+            </div> 
+    
+        </div>
+        <hr>
+        <div class="down-info-flex">
+            <div class="buton-c"> <span>*</span> <a href="#" style="color:black"> CONTINUE </a> </div> 
+
+            <div>...</div>
+        </div> 
+
+    </div>
+    
+
+
+    <div class="cards-container">
+
+        <div class="row1-dflex">
+            <div class="spacing-rows">
+                <div class="row-pic row-content">
+                    <img src="assets/imagenes/angular_40x40@2x.png" alt="Introduction to Angular" width="64px" height="48px">
+                </div>
+        
+                <div class="introduction-row row-content">
+                    <a class="card-title" href="fixed-student-take-quiz.html" style="color:rgb(130, 120, 136);">Angular Fundamentals</a> 
+                    <div> 3 days ago</div>
+        
+                </div>
+
+            </div>
+            
+            <div class="row-right-info row-content">
+                <b>2.8</b> <br>
+                score
+            </div>
+    
+        </div>
+        <hr>
+
+        <div class="down-info-flex">
+            <div class="buton-c"> <span>*</span> <a href="#" style="color:black"> RESET </a> </div> 
+
+            <div>...</div>
+        </div> 
+
+
+    </div>
+
+</div>
+
+
+<!-- NAV CONTENEDOR-->
+<footer id="navfooter">
+    <div class="nav-flex-column">
+        <div class="nav-logo-luma">
+            <img src="http://luma.humatheme.com/assets/images/logo/black-70@2x.png" alt="Luma" width="30px"> <span>Luma</span>
+        </div>
+
+        <div class="nav-content">
+
+            <p class="nav-text-info">
+                Luma is a beautifully crafted user interface for modern Education Platforms, including Courses & Tutorials,<br> Video Lessons, Student and Teacher Dashboard, Curriculum Management,
+                Earnings and Reporting, ERP, <br> HR, CMS, Tasks, Projects, eCommerce and more.
+            </p>
+        </div>
+
+
+    <div class="nav-links-dflex">
+        <span class="footer-a-colors">
+            <a href="#">Terms</a>
+
+        </span>
+
+        <span class="footer-a-colors">
+            <a href="#">Privacy policy</a>
+        </span>
+
+    </div>
+
+    <div class="copyright nav-text-info"> <p> Copyright 2019 © All rights reserved.</p> </div>
+
+    </div>
+</footer>
+
+
+
+
+</body>
+
+</html>
