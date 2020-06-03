@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+
+#row-container { /* Contenedor padre*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+   /*border: solid;*/
+   /*background: crimson;*/
+    
+
+}
+
+
+.colum-3{ /* Contenedor en columna para las 3 cards*/
+    
+    margin: 2px;
+    padding: 2px;
+    
+    /* border: solid; */
+    
+
+}
+
+
+.cols3-d-flex, .col-content2{
+    display: flex;
+    
+    
+}
+
+.col-content2 {
+    margin-right: 240px;
+}
+
+.cols3-d-flex {
+    
+    justify-content: space-between;
+}
+
+
+
+.d-row-2{ /* Contenedor en columna para las 2 cards con display flex, para que se comporten en estilo row*/
+    display: flex;
+    margin: 10px;
+    padding: 2px;
+   /* border: solid; */
+
+}
+
+/* Les defino un ancho fijo a esta fila que contiene dos cajas*/
+.d-row-witdh {
+    width: 279px;
+    
+}
+
+
+.d-flex-down-text {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+}
+
+
+.d-col-3 {  /* Contenedor de las 3 cajas en forma de columna */
+    margin: 6px;
+    padding: 2px;
+    background-color: #fff;
+    border: 1px solid #dfe2e6;
+    border-radius: .5rem;
+    
+
+}
+
+
+/* imagen y textos de la col*3 margin igual para que se alineen */
+.hijos-img, .text-into-cols3, .text-col3 {
+    margin: 10px;
+    
+    /*border: solid; */
+}
+
+.text-col3 {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #868e96!important;
+    
+}
+
+
+img {
+    max-width: 100%;
+    background-size: cover;
+}
+

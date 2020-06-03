@@ -1,15 +1,303 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    text-decoration:none;
+
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    
+    font-family: Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-size: .8125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #272c33;
+    text-align: left;
+}
+
+
 .clase-test {
 background: orangered;
-width: 100%;
+margin: 10px;
 }
+
+
+
+
+
+
+/* Homepage */
+.row-cont-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    margin: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+
+.pos-spaceb {
+
+    padding: 5px;
+    margin: 20px;
+
+}
+
+
+
+.my-courses {
+    padding-top: 50px;
+}
+
+
+.btn {
+    border: 1px solid;
+    border-radius: .3rem;
+    color: #868e96;
+    border-color: #868e96;
+    padding: .10rem 1rem;
+    padding-top: 10px;
+    text-transform: uppercase;
+
+}
+
+.btn:hover {
+    background: #868e9631;
+}
+
+h2 {
+    font-family: Exo\ 2,Helvetica Neue,Arial,sans-serif;
+}
+
+    @media screen and (max-width:575px) {
+        .row-cont-one {
+        justify-content: space-between;
+        justify-content: center;
+        text-align: center;
+
+        }
+    }
+
+
+
+.separator-section {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Discussion Section*/
+
+#discussion-container {
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid;*/
+    align-items: center;
+    justify-content: center;
+    
+
+
+}
+
+.row-container {
+
+    position: relative;
+    height: 100px;
+    padding: 16px;
+    border: 1px solid;
+    border-radius: .5rem;
+    border-color: #868e96;
+    background: white;
+    width: 79%;
+
+}
+
+
+.media-pic {
+    /*display: flex;
+    flex-direction: column;*/
+    background: violet;
+    border: 1px solid;
+    border-radius: 50%!important;
+    text-align: center;
+    width: 30px;
+}
+
+.pos-relative {
+    position: relative;
+    left: 40px;
+    bottom: 20px;
+}
+
+
+.pos-abs-info { /* pos relative caja 1*/
+    position: absolute;
+    top: 4px;
+    left: 280px;
+    height: auto;
+    width: auto;
+    /*border: 1px solid;*/
+}
+
+
+.pos-abs-info-box2 {
+
+    position: absolute;
+    top: 8px;
+    left: 280px;
+
+}
+
+.into-absolute {
+    border-radius: .5rem;
+    border: 1px solid;
+    margin: 10px;
+    padding: 6px;
+    color: #868e96;
+    border-color: #868e96;
+
+}
+
+/* Mini text- align right
+.pos-abs-right {
+    top: 20px;
+    left: 700px;
+    text-align: center;
+    /*border: 1px solid;
+}*/
+
+
+.into-absolute:hover {
+    background: rgba(228, 64, 14, 0.322);
+    transition: 2s;
+
+}
+
+
+.spacing-notifications {
+
+}
+
+/* Quizzes section */
+#container-row1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    
+   /* border: solid 1px; */
+}
+
+.cards-container {
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #dfe2e6;
+    border-radius: .5rem;
+    padding: 10px;
+    margin: 10px; 
+    width: 38.9%;
+}
+
+.row1-dflex {
+    display: flex;
+    /*border: solid; */
+    padding: 2px;
+    margin: 2px;
+}
+
+.spacing-rows {
+    display: flex;
+    margin-right: 180px;
+}
+
+.row-content {
+    margin: 5px;
+}
+
+
+
+.down-info-flex {
+    /*border: solid;*/
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    
+    
+}
+
+.row-right-info {
+    text-align: center;
+}
+
+
+@media screen (max-width: 576px) { 
+    .cards-container{
+        display: inline-block;
+        max-width: 80%;
+        
+    }
+
+    .spacing-rows {
+        justify-content: space-between;
+        margin-right: 0px;
+    }
+ }
+
+@media (max-width: 768px) { 
+    .cards-container {
+        max-width: 80%;
+    }
+
+    .spacing-rows {
+        justify-content: space-between;
+        margin-right: 0px;
+    }
+}
+
 
 /* Footer */
 #navfooter {
     display: flex;
     margin-top: 10px;
-    
+    background: white;
     max-width: 100%;
-    
+    border-top: 1px solid;
+
+
 }
 
 
@@ -20,7 +308,7 @@ width: 100%;
     font-size: .9125rem;
     font-weight: 400;
     width: 100%;
-    
+
 }
 
 
@@ -29,7 +317,7 @@ width: 100%;
     display: flex;
     padding-top: 20px;
     font-size: 1.625rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.231;
 }
 
@@ -37,6 +325,7 @@ width: 100%;
     max-width: 816px;
     margin-bottom: .5rem!important;
     color: rgba(39,44,51,.5)!important;
+
 }
 
 .footer-a-colors:hover {
