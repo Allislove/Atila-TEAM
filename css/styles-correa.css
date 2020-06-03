@@ -1,0 +1,370 @@
+/* Imports */
+
+@import url(helpers-correa.css);
+@import url(media-queries-correa.css);
+
+/* Variables utilizadas en la web */
+
+:root {
+    --primary-color: rgb(45, 49, 76);
+    --secondary-color: rgb(32, 36, 60);
+    --three-color: rgb(90, 82, 255);
+    --shadow-color: rgb(186, 187, 189);
+    --text-color-primary: #ffffff;
+    --text-color-secondary: rgb(46, 50, 77);
+    --text-color-altern: rgb(171, 174, 178);
+    --text-color-main: #303956;
+    --shadow-ligth: 0 6px 6px -3px rgba(39, 44, 51, 0.1), 0 10px 14px 1px rgba(39, 44, 51, 0.04), 0 4px 18px 3px rgba(39, 44, 51, 0.02);
+    --shadow-cards: 0 3px 3px -2px rgba(39, 44, 51, 0.1), 0 3px 4px 0 rgba(39, 44, 51, 0.04), 0 1px 8px 0 rgba(39, 44, 51, 0.02);
+    --background-page: #f5f7fa;
+    --pink-arrow: #ed0b4c;
+    --green-arrow: #77c13a;
+}
+
+
+/* Estilos generales */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-page);
+    color: var(--text-color-main);
+}
+
+
+/* Estilos generales del nav */
+
+
+/* Estilos del nav left */
+
+#main-nav {
+    background-color: var(--primary-color);
+    min-height: 65px;
+    box-shadow: var(--shadow-ligth);
+}
+
+#main-nav .nav-container {
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+}
+
+#main-nav .nav-left {
+    /* border: 1px solid black; */
+    align-items: center;
+}
+
+#main-nav .nav-rigth {
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+
+/* Estilos generales del brand */
+
+.brand {
+    align-items: center;
+}
+
+.brand-logo {
+    background-color: var(--three-color);
+    margin-right: 0.5rem;
+}
+
+.brand-logo img {
+    padding: 0.25rem;
+}
+
+.brand .brand-text {
+    font-size: 1.625rem;
+    font-weight: 400;
+    color: var(--text-color-primary);
+}
+
+
+/* Estilos generales del avatar */
+
+.avatar-content {
+    margin-right: 1rem;
+}
+
+.avatar {
+    font-size: 1rem;
+    margin-right: 0.75rem;
+    background-color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-container i {
+    color: var(--text-color-primary);
+}
+
+.avatar-content small {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-content small strong {
+    color: var(--text-color-primary);
+}
+
+.avatar-content small>span {
+    color: var(--shadow-color);
+    margin-top: 5px;
+}
+
+
+/* Estilos generales del input */
+
+.search-bar {
+    background-color: var(--secondary-color);
+    border-color: transparent;
+}
+
+.search-bar .search-btn {
+    padding: 0 0.65rem;
+    margin-right: 0;
+}
+
+.search-bar .search-btn i {
+    font-size: 0.8125rem;
+}
+
+.search-bar input[type="text"] {
+    border-color: transparent;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: var(--text-color-primary);
+}
+
+
+/* Estilos del nav rigth */
+
+.nav-rigth .dropdown {
+    margin-left: 1rem;
+}
+
+.nav-rigth .dropdown a {
+    margin-right: 0px;
+}
+
+.nav-rigth .badged {
+    border-radius: 100px;
+    color: var(--text-color-primary);
+    background-color: var(--pink-arrow);
+    padding: 0 0.5rem;
+    top: 4px;
+    left: 15px;
+}
+
+.nav-rigth .dropdown button i {
+    font-size: 25px;
+}
+
+.nav-rigth .dropdown a span {
+    border-radius: 50%;
+    background-color: var(--three-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-rigth .dropdown a span i {
+    padding: 0.25rem;
+    color: var(--text-color-primary);
+}
+
+
+/* Estilos main Page */
+
+
+/* Estilos page header */
+
+.page-content {
+    padding-top: 5rem;
+}
+
+.page-header {
+    padding-top: 2rem;
+}
+
+.page-header .page-left {
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-header .page-left .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.81rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: 0.5rem;
+}
+
+.page-left h2 {
+    color: var(--text-color-main);
+    font-size: 32px;
+}
+
+.breadcrumb li i {
+    font-size: 10px;
+}
+
+.breadcrumb li a {
+    color: var(--text-color-altern);
+}
+
+.breadcrumb li:last-child a {
+    font-weight: 300;
+}
+
+.breadcrumb li:last-child {
+    margin-left: -0.5rem;
+}
+
+.page-rigth a {
+    color: #868e96;
+    border: 1px solid#868e96;
+}
+
+.page-rigth a:hover {
+    background-color: #868e96;
+    color: var(--text-color-primary);
+}
+
+
+/* Estilos Page container cards */
+
+.page-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.page-section .card {
+    justify-content: space-between;
+}
+
+.row .space-input .custom-control {
+    margin-top: 0.5rem;
+}
+
+.card button {
+    background-color: white;
+    margin-right: 0px;
+    border: 1px solid #dfe2e6;
+    border-radius: 0px;
+}
+
+.card button i {
+    font-size: inherit;
+}
+
+.card-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-group .card-container {
+    padding-left: 12px;
+    padding-right: 12px;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+
+.card-group .card-body {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card-group .card-body div:first-child {
+    align-items: center;
+}
+
+.card-body .card-body-item small span {
+    color: var(--text-color-altern);
+}
+
+.card-body .card-body-item small span:first-child {
+    color: var(--text-color-main);
+    font-weight: 600;
+}
+
+.card-body .card-body-item {
+    border-bottom: 0.5px solid #ccc;
+}
+
+.card-body .card-body-item:last-child {
+    border: none;
+}
+
+.chart-legend .chart-legend-item i {
+    color: var(--three-color);
+    font-size: 0.6rem;
+    margin-right: 0.25rem;
+}
+
+.color-second-line {
+    color: rgba(90, 82, 255, 0.1) !important;
+}
+
+.text-chart-circle {
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.text-chart-circle h3 {
+    font-size: 1.41rem;
+}
+
+.text-chart-circle small {
+    text-transform: uppercase;
+    color: var(--text-color-altern);
+}
+
+.card-header {
+    border-bottom: 0.5px solid #ccc;
+}
+
+.card-header .row {
+    justify-content: space-between;
+}
+
+.p-card-header {
+    padding: 1rem 1rem;
+    border-right: 0.5px solid #ccc;
+    font-weight: 600;
+}
+
+.p-card-header .card-subtitle {
+    font-size: 0.8125rem;
+}
+
+.p-card-header:last-child {
+    border-right: 0px;
+}
+
+.row .btn-export {
+    padding: 0.5rem 1rem;
+    border: 1px solid#868e96;
+    border-radius: 5px;
+    margin-right: 0px;
+    color: #868e96;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+}
+
+.row .btn-export:hover {
+    background-color: #868e96;
+    color: var(--text-color-primary) !important;
+}
