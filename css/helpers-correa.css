@@ -295,3 +295,36 @@ label {
     font-size: 0.8125rem;
     margin-left: 0.5rem;
 }
+
+.circle {
+    display: block !important;
+    width: 10px !important;
+    height: 10px !important;
+    visibility: visible !important;
+    border-radius: 99% !important;
+    background-color: red !important;
+}
+
+.mb {
+    margin-bottom: 0.25rem !important;
+}
+
+.text-black-100 {
+    font-weight: 600;
+    color: #272c33;
+    font-size: 0.875rem;
+}
+
+.text-black-70 {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: rgba(39, 44, 51, 0.7);
+}
+
+.show-menu {
+    opacity: 1 !important;
+}
+
+.hide-menu {
+    opacity: 0 !important;
+}

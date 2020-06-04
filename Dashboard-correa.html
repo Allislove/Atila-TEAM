@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="css/styles-correa.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.4.2/main.min.css">
 
     <script src="https://kit.fontawesome.com/8c7143470a.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+    <script src="https://unpkg.com/@fullcalendar/core@4.4.2/main.min.js"></script>
     <script src="js/main-correa.js"></script>
     <title>Dashborad</title>
 </head>
@@ -67,21 +69,58 @@
             </div>
             <div class="nav-rigth d-flex">
                 <div class="dropdown">
-                    <button>
-                    <i class="far fa-envelope"></i>
-                </button>
+                    <button onclick="menuBtn()">
+                        <i class="far fa-envelope"></i>
+                    </button>
+                    <div class="dropdown-menu email-menu p-absolute">
+                        <div class="dropdown-header">
+                            <strong>messages</strong>
+                        </div>
+                        <div class="dropdown-body d-flex-column">
+                            <a href="#" class="list-group-item">
+                                <span class="d-flex m-b">
+                                    <small class="flex">5 minutes ago</small>
+                                    <span class="circle"></span>
+                                </span>
+                                <span class="d-flex">
+                                    <span class="avatar">
+                                        <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="icon-avatar">
+                                    </span>
+                                <span class="d-flex-column">
+                                        <strong class="text-black-100 ">Michelle</strong>
+                                        <span class="text-black-70">Clients love the new design</span>
+                                </span>
+                                </span>
+                            </a>
+                            <a href="#" class="list-group-item ">
+                                <span class="d-flex m-b">
+                                    <small class="flex">8 minutes ago</small>
+                                    <span></span>
+                                </span>
+                                <span class="d-flex">
+                                    <span class="avatar">
+                                        <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="icon-avatar">
+                                    </span>
+                                <span class="d-flex-column">
+                                        <strong class="text-black-100 ">Andrew</strong>
+                                        <span class="text-black-70">Super job</span>
+                                </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="dropdown p-relative">
                     <button>
-                    <i class="far fa-bell"></i>
-                    <span class="badged p-absolute">
-                        2
-                    </span>
-                </button>
+                        <i class="far fa-bell"></i>
+                        <span class="badged p-absolute">
+                            2
+                        </span>
+                    </button>
                 </div>
                 <div class="dropdown">
                     <a href="#" class="d-flex">
-                        <span class="d-flex box-nav">
+                        <span class="d-flex box-nav icon-profile">
                         <i class="fas fa-user"></i>
                     </span>
                     </a>
@@ -130,7 +169,7 @@
                         <div class="space-input col-4">
                             <div class="form-group d-flex-column-sm">
                                 <label for="">CATEGORY</label>
-                                <select name="" id="filter-category" class="custom-select" style="width: 180px;">
+                                <select name="" id="filter-category" class="custom-select calendar" onclick="calendarPlugin()" style="width: 180px;">
                                     <option value="all">All Categories</option>
                                 </select>
                             </div>

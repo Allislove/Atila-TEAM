@@ -3,6 +3,7 @@
  * Grafica de lineas
  */
 window.addEventListener('load', () => {
+
     var ctx = document.getElementsByClassName('myChart');
     var myChart = new Chart(ctx, {
         type: 'line',
@@ -332,4 +333,43 @@ window.addEventListener('load', () => {
             }
         }
     });
+
+
+
+
 })
+
+function calendarPlugin() {
+    console.log("Juan Correa");
+    // document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementsByClassName('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        plugins: ['dayGrid', 'list']
+    });
+
+    calendar.render();
+    // });
+}
+
+/**
+ * Menu de mensajes
+ */
+
+
+var tipo = true;
+
+function menuBtn() {
+    console.log('aqui....')
+    var btn_menu = document.querySelector('.email-menu');
+    console.log(btn_menu);
+    if (tipo) {
+        btn_menu.classList.add('show-menu');
+        btn_menu.classList.remove('hide-menu')
+        tipo = false;
+    } else {
+        btn_menu.classList.add('hide-menu');
+        btn_menu.classList.remove('show-menu');
+        tipo = true;
+    }
+}
