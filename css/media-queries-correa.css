@@ -5,12 +5,18 @@
         padding-right: 25.5rem;
         padding-left: 25.5rem;
     }
+    .dropdown-menu {
+        left: 82% !important;
+    }
 }
 
 @media (max-width: 1440px) {
     .page-container {
         padding-right: 10.5rem;
         padding-left: 10.5rem;
+    }
+    .dropdown-menu {
+        left: 70% !important;
     }
 }
 
@@ -22,6 +28,9 @@
     .title-card-conversion {
         margin-bottom: 1rem;
         margin-top: 0.5rem;
+    }
+    .dropdown-menu {
+        left: 57% !important;
     }
 }
 
@@ -43,6 +52,9 @@
     }
     .title-card-conversion {
         margin-top: 1.5rem;
+    }
+    .dropdown-menu {
+        left: 42% !important;
     }
 }
 
@@ -70,6 +82,9 @@
     .col-3 {
         width: 100%;
     }
+    .dropdown-menu {
+        left: 22% !important;
+    }
 }
 
 @media (max-width: 425px) {
@@ -84,5 +99,9 @@
     }
     .custom-select {
         width: 160px !important;
+    }
+    .dropdown-menu {
+        left: 0 !important;
+        width: 100% !important;
     }
 }

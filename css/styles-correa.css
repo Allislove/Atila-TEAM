@@ -169,7 +169,7 @@ body {
     font-size: 25px;
 }
 
-.nav-rigth .dropdown a span {
+.icon-profile {
     border-radius: 50%;
     background-color: var(--three-color);
     justify-content: center;
@@ -367,4 +367,59 @@ body {
 .row .btn-export:hover {
     background-color: #868e96;
     color: var(--text-color-primary) !important;
+}
+
+
+/* Estilos de los click y hover */
+
+.dropdown-menu {
+    top: 100%;
+    left: 70%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    min-width: 300px;
+    margin-top: 0.5rem;
+    box-shadow: 0 5px 5px -3px rgba(39, 44, 51, 0.1), 0 8px 10px 1px rgba(39, 44, 51, 0.04), 0 3px 14px 2px rgba(39, 44, 51, 0.02);
+    transition: opacity 0.2s cubic-bezier(0.3, 0.5, 0.5, 1), margin 0.2s cubic-bezier(0.1, 0.3, 0.8, 1), visibility 0.3s ease;
+    opacity: 0;
+}
+
+.dropdown-menu .dropdown-header {
+    padding: 0.5rem 1.5rem;
+}
+
+.dropdown-menu .dropdown-header strong {
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.dropdown-body a {
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+    color: #495057;
+    text-align: inherit;
+}
+
+.dropdown-body a span {
+    background-color: transparent;
+}
+
+.dropdown-body a .avatar {
+    font-size: 0.54167rem;
+    width: 1.625rem;
+    height: 1.625rem;
+    margin-right: 0.5rem !important;
+}
+
+.dropdown-body a .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.nav-rigth .dropdown-body a:first-child {
+    border-bottom: 0.5px solid #ccc;
 }
