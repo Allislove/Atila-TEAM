@@ -1,0 +1,14 @@
+
+@media screen and (max-width:575px){
+    .col-4{
+        width: 100%!important;
+     
+    }
+}
+
+    @media (min-width: 750px) {
+       .row {
+           display: flex!important;
+       }
+    }
+    

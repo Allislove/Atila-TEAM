@@ -1,0 +1,21 @@
+@media (max-width: 575px) and (min-width: 0px){
+    .margin-h20px-media {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.margin-h100px {
+    margin: 0px 100px;
+}
+div {
+    display: block;
+}
+
+body {
+    font-size: .8125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #272c33;
+    text-align: left;
+    background-color: #f5f7fa;
+}
+}
