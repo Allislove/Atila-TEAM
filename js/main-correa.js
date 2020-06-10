@@ -342,7 +342,7 @@ window.addEventListener('load', () => {
 function calendarPlugin() {
     console.log("Juan Correa");
     // document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementsByClassName('calendar');
+    var calendarEl = document.getElementById('calendar');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
         plugins: ['dayGrid', 'list']
