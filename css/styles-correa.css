@@ -423,3 +423,54 @@ body {
 .nav-rigth .dropdown-body a:first-child {
     border-bottom: 0.5px solid #ccc;
 }
+
+
+/* Footer */
+
+#footer {
+    border-top: 2px solid #e9edf2;
+    background-color: #ffffff;
+}
+
+#footer .brand {
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 1.231;
+    margin-bottom: 1.5rem;
+    color: rgb(106, 110, 115) !important;
+}
+
+.brand-icon {
+    margin-right: 0.5rem;
+    display: inline-block;
+    vertical-align: sub;
+    width: 30px !important;
+}
+
+.text-footer {
+    max-width: 616px;
+    line-height: 1.5;
+    color: var(--text-color-altern);
+    font-size: 0.8125rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.privacy {
+    margin-bottom: 0.5rem;
+}
+
+.privacy a {
+    text-decoration: underline;
+    color: rgba(39, 44, 51, 0.7);
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
+
+.copy-rigth {
+    line-height: 1.5;
+    color: rgba(39, 44, 51, 0.5);
+    margin-top: -0.25rem;
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
