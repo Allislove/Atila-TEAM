@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="icon" href="assets/white.svg" type="image/svg">
     <link rel="stylesheet" href="css/styles-correa.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.4.2/main.min.css">
@@ -16,7 +17,7 @@
     <script src="https://unpkg.com/@fullcalendar/daygrid@4.4.2/main.min.js"></script>
     <script src="https://unpkg.com/@fullcalendar/list@4.4.2/main.min.js"></script>
     <script src="js/main-correa.js"></script>
-    <title>Dashborad</title>
+    <title>Dashboard Juan Correa</title>
 </head>
 
 <body>
@@ -173,7 +174,7 @@
                         <div class="space-input col-4">
                             <div class="form-group d-flex-column-sm">
                                 <label for="">CATEGORY</label>
-                                <select name="" id="filter-category" class="custom-select calendar" onclick="calendarPlugin()" style="width: 180px;">
+                                <select name="" id="filter-category" class="custom-select calendar" style="width: 180px;">
                                     <option value="all">All Categories</option>
                                 </select>
                             </div>
@@ -190,7 +191,7 @@
                         <div class="space-input col-4">
                             <div class="form-group" style="width: 180px;">
                                 <label for="">ORDER DATE</label>
-                                <input type="text" class="form-control" placeholder="Select date ...">
+                                <input type="text" class="form-control" onclick="calendarPlugin()" placeholder="Select date ...">
                             </div>
                         </div>
                     </div>
@@ -798,7 +799,7 @@
 
     <!-- Prueba de calendarip -->
 
-    <div id="calendar">
+    <div id="calendar" class="p-absolute ">
     </div>
 
 </body>

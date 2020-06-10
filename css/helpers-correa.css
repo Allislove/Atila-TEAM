@@ -328,3 +328,11 @@ label {
 .hide-menu {
     opacity: 0 !important;
 }
+
+.hide-calendar {
+    opacity: 0 !important;
+}
+
+.show-calendar {
+    opacity: 1 !important;
+}

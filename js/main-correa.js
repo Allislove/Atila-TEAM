@@ -339,24 +339,40 @@ window.addEventListener('load', () => {
 
 })
 
+/**
+ * Calendario 
+ */
+let typeCalendar = true;
+
 function calendarPlugin() {
-    console.log("Juan Correa");
-    // document.addEventListener('DOMContentLoaded', function() {
+
     var calendarEl = document.getElementById('calendar');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
-        plugins: ['dayGrid', 'list']
+        plugins: ['dayGrid', 'list'],
+        events: [{
+            start: '2020-06-10T10:00:00',
+            end: '2020-06-10T16:00:00',
+            rendering: 'background'
+        }]
     });
+    let hideCalendar = document.querySelector('#calendar');
+    if (typeCalendar) {
+        calendar.render();
+        typeCalendar = false;
+        hideCalendar.classList.remove('hide-calendar');
+        hideCalendar.classList.add('show-calendar');
+    } else {
+        typeCalendar = true;
+        hideCalendar.classList.add('hide-calendar');
+        hideCalendar.classList.remove('show-calendar');
 
-    calendar.render();
-    // });
+    }
 }
 
 /**
  * Menu de mensajes
  */
-
-
 var tipo = true;
 
 function menuBtn() {
