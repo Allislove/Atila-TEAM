@@ -16,6 +16,49 @@ body{
     text-align: left;
     background-color: #f5f7fa;
 }
+/*Nav section*/
+
+nav ul{
+	list-style: none;
+}
+
+nav ul a{
+  display: block;
+  color: rgb(240, 222, 222);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+nav ul li{
+	position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+  }
+
+nav ul li:hover {
+  box-shadow: 0 0.1px 10px rgba(245, 169, 70, 0.288), 0 0.1px 0.1px rgba(245, 169, 70, 0.288);
+}
+nav ul ul{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  padding:0;
+  background-color: #303956;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+nav ul ul li {
+float:none;
+min-width:150px;
+}
+nav ul ul a {
+  padding:10px 25px;
+}
+nav ul li:hover > ul {
+  display:block;
+}
+
 hr {
   height: 1px;
   background-color: rgba(255, 255, 255, 0.123);
@@ -54,6 +97,9 @@ hr {
 }
 .absolute{
   position:absolute;
+}
+.relative{
+  position: relative;
 }
 .fixed{
   position:fixed;
