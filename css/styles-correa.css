@@ -474,3 +474,20 @@ body {
     font-size: 0.8125rem;
     font-weight: 400;
 }
+
+
+/* Estilos calendario */
+
+#calendar {
+    display: block;
+    max-width: 40%;
+    height: auto;
+    overflow: scroll;
+    top: 40%;
+    left: 50%;
+    border: 1px solid var(--shadow-color);
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 1rem;
+    opacity: 0;
+}
