@@ -121,9 +121,13 @@ img.width-100 {
   }
   .card-col-2-image {
       background-image: url("http://luma.humatheme.com/assets/images/achievements/angular.png");
+      margin: 10px;
+      border-radius: 8px;
   }
   .card-col-2-image-2 {
       background-image: url("http://luma.humatheme.com/assets/images/achievements/flinto.png");
+      margin: 10px;
+      border-radius: 8px;      
   }
   .logo-copa {
       width: 64px;
@@ -132,18 +136,9 @@ img.width-100 {
   .logo-col-2 {
       width: 64px;
       height: 64px;
-  }
-  div .card-col-2-image {
-      border-radius: 8px;
-  }
-  div .card-col-2-image-2 {
       border-radius: 8px;
   }
   .text-white {
       color: white;
       font-weight: 600;
-  }
-  .heart {
-      width: 50px;
-      position: absolute;
   }

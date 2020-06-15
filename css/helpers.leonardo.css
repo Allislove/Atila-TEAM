@@ -1,7 +1,7 @@
 #main {
     height: 100%;
     background: #F5F7FA;
-    padding: 10%;
+    padding: 5% 10%;
 }
 .intro {
     width: 100%;
@@ -26,11 +26,14 @@
     width:100%;     
 }
 .padding-small {
-    padding: 10%;
+    padding: 5%;
 }
 .footer-section {
     width: 100%;
     margin-top: 5%;
     border-top: solid 2px gray;
     padding: 10px;
+}
+.padding-card-2 {
+    padding-right: 20px;
 }

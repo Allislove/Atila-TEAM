@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses</title>
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="helpers.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/grid.leonardo.css">
+    <link rel="stylesheet" href="css/helpers.leonardo.css">
+    <link rel="stylesheet" href="css/styles.leonardo.css">
     <script src="https://kit.fontawesome.com/50ead72691.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -34,8 +34,8 @@
                 Introduction to TypeScript
               </h2>    
               <div class="row style-subtext justify-center">
-               <p>50 minutes left</p>
-                <p>12 lessons</p>
+               <p><i class="far fa-clock"></i> 50 minutes left</p>
+                <p><i class="far fa-play-circle"> </i>12 lessons</p>
               </div>
               <div>
                 <button class="button-intro">
@@ -63,16 +63,24 @@
         <hr>
        
         <section class="intro space-top">
-            <div>
-                <h3 class="">
-                  <div> LEARNING PATHS <span></span></div>
-                </h3>
+            <div class="d-flex-cb padding-top-small">
+                <div>
+                    <h3>LEARNING PATHS</h3>
+                </div>
+                <div class="width-100">
+                    <hr>
+                </div>
             </div>
+
             <div class="row padding-top-small justify-center">
                 <div class="col-3 cards row">
                     <img class="logo" src="http://luma.humatheme.com/assets/images/paths/angular_40x40@2x.png" alt="">
                     <div>Angular <br> <small>18 courses</small></div>
-                     <a href="#">RESUME</a>
+                    <div class="text-center">
+                        <button>
+                           RESUME
+                        </button>
+                    </div>
                 </div>
                 <div class="col-3 cards row">
                     <img class="logo" src="http://luma.humatheme.com/assets/images/paths/swift_40x40@2x.png" alt="">
@@ -116,11 +124,14 @@
         </section>
 
         
-     <section class="intro-courses space-top">
-         <div>
-                <h3>DEVELOPEMENT COURSES</h3>
+        <div class="d-flex-cb padding-top-small">
+            <div>
+                <h3>DEVELOPMENT COURSES</h3>
+            </div>
+            <div class="width-100">
+                <hr>
+            </div>
         </div>
-    </section>
 
     <section class="intro padding-top-small">
         <div class="container">
@@ -215,7 +226,7 @@
 
         <div class="d-flex-cb padding-top-small">
             <div>
-                <h3>DESIN COURSES</h3>
+                <h3>DESIN COURSES </h3>
             </div>
             <div class="width-100">
                 <hr>
@@ -412,28 +423,66 @@
     <section class="intro padding-top-small">
         <div class="row container space-betwen">
             <div class="col-2">
-                <div class="card-col-2 card-col-2-image row justify-center">
-                    <p>
-                        ARCHIEVEMENT <br> <small> Junio, 5 2020</small>
-                    </p>
-                    <div>
-                        <img src="http://luma.humatheme.com/assets/images/paths/flinto_40x40@2x.png" alt="">
-                    </div>
-                    <div>
-                        <p>
-                            Flinto <br> <small> Introduction to The App Desin Application</small>
-
+                <div class="card-col-2 card-col-2-image-2 padding-small text-white">
+                    <div class="row justify-center text-center aling-center">
+                        <p class="padding-card-2">
+                            ARCHIEVEMENT <br> <small> Junio 5, 2020</small>
                         </p>
+                        <div>
+                            <img class="logo-col-2" src="http://luma.humatheme.com/assets/images/paths/flinto_40x40@2x.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row justify-center">
+                        <div>
+                            <img class="logo-copa" src="http://luma.humatheme.com/assets/images/illustration/achievement/128/white.png" alt="">
+                        </div>
+                        <p>
+                           Flinto <br> <small> Introduction to The App Desin Application</small>
+                        </p>                        
                     </div>
                 </div>
             </div>
             <div class="col-2">
-                <div class="card-col-2">
-                    <img class="width-100" src="http://luma.humatheme.com/assets/images/achievements/flinto.png" alt="">                  
-                     </div>                                   
+                <div class="card-col-2 card-col-2-image padding-small text-white">
+                    <div class="row justify-center text-center aling-center">
+                        <p class="padding-card-2">
+                            ARCHIEVEMENT <br> <small> Junio 5, 2020</small>
+                        </p>
+                        <div>
+                            <img class="logo-col-2" src="http://luma.humatheme.com/assets/images/paths/angular_64x64.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row justify-center">
+                        <div>
+                            <img class="logo-copa" src="http://luma.humatheme.com/assets/images/illustration/achievement/128/white.png" alt="">
+                        </div>
+                        <p>
+                           Angular fundamentals <br> <small> Creating and Communicating Between Angular Components</small>
+                        </p>                        
+                    </div>
                 </div>
             </div>
     </section>
+
+    <footer class="footer-section">
+        <div class="row">
+            <img class="logo" src="http://luma.humatheme.com/assets/images/logo/black-70@2x.png" alt="">
+            <h2>Luma</h2>
+        </div>
+        <div class="padding-top-small">
+            <p>
+                <small>Luma is a beautifully crafted user interface for modern Education Platforms, including Courses & Tutorials, Video Lessons, Student and Teacher Dashboard, Curriculum Management, Earnings and Reporting, ERP, HR, CMS, Tasks, Projects, eCommerce and more
+                </small>
+            </p>
+        </div>
+        <div class="padding-top-small">
+            <a href="#">Terms</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div>
+            <small>Copyright 2019 © All rights reserved.</small>
+        </div>
+    </footer>
 
 
     
